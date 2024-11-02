@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form name="form1" method="post" action="http://hebertphp.awardspace.us/recebe.php">
+        <label for="login">Login</label> <input type="text" id="login" name="login" placeholder="Digite seu login" required><b>*</b><br>
+        <label for="senha">Senha</label> <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required><b>*</b><br>
+        Data <input type="datetime-local" id="data" name="data"><br>
+        <input type="hidden" name="vai" value="já foi">
+
+        <h2>Selecione uma ou mais linguagens</h2>
+         <input type="checkbox" id="js" name="js" checked> <label for="js"> JS </label> <br>
+         <input type="checkbox" id="php" name="php"> <label for="php"> PHP </label> <br>
+         <input type="checkbox" id="sql" name="sql"> <label for="sql"> SQL </label> <br>
+
+        <h2>Qual o dia da semana da aula de HTML/CSS?</h2>
+        <input type="radio" id="segunda" name="dia" value="segunda" required> <label for="segunda"> Segunda </label> <br>
+        <input type="radio" id="terça" name="dia" value="terça"> <label for="terça"> Terça </label> <br>
+        <input type="radio" id="quarta" name="dia" value="quarta"> <label for="quarta"> Quarta </label> <br>
+        <input type="radio" id="quinta" name="dia" value="quinta"> <label for="quinta"> Quinta </label> <br>
+        <input type="radio" id="sexta" name="dia" value="sexta"> <label for="sexta"> Sexta </label> <br>
+
+        <h2>Selecione o UF</h2>
+        Selecione o UF <select name = "uf">
+            <option value="RJ"> Rio de Janeiro </option> <br>
+            <option value="Minas Gerais"> MG </option> <br>  
+            <option selected > SP </option> <br>
+            <option> ES </option> 
+        </select> <br>
+
+        Mensagem <textarea name="msg" rows="10" cols="33" placeholder="Digite sua mensagem"></textarea> <br>
+
+        <input type="submit" value="Enviar!"><input type="reset"  value="Limpar Dados!">
+    </form><br>
+    <p><b>*</b> - Campo obrigatório</p>
+</body>
+</html>
